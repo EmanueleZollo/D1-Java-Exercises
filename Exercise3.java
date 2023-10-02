@@ -15,6 +15,7 @@ public class Exercise3 {
 
         System.out.println(perimetroRettangolo(6.4,7.9));
         System.out.println(pariDispari(12));
+        System.out.println(perimetroTriangolo(5.4,7.5,2.9));
     }
 
     public static double perimetroRettangolo (double side1, double side2) {
@@ -27,7 +28,10 @@ public class Exercise3 {
         } else {
             return 1;
         }
+    }
 
-
+    public static double perimetroTriangolo (double side1 ,double side2, double side3) {
+        double p = (side1+side2+side3)/2;
+        return  Math.sqrt(p * (p - side1) * (p - side2) * (p - side3));
     }
 }

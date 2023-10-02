@@ -12,19 +12,35 @@
 public class Exercise1 {
     public static void main(String[] args) {
 
+
+        /*
+        i metodi si scrivono esternamente al main, i valori internamente?
+        */
+
         System.out.println(product(5, 9));
         System.out.println(concatElements("Java", 1));
-/*
-        i metodi si scrivono esternamente al main, i valori internamente?
-*/
+
+
+        String [] carbrand;
+        System.out.println(modifyArr(carbrand, "Fiat"));
+
     }
 
     public static int product(int n1, int n2) {
         return n1*n2;
     }
 
-    public static String concatElements (String str,int n1) {
+    public static String concatElements (String str, int n1) {
         return str + n1;
+    }
+
+
+
+    public static String[] modifyArr(String[] arr, String str ) {
+        String [] carbrand = {"Mercedes", "Wolkswagen", "Opel", "Renault", "Ford"};
+        return new String[] {arr[0] = carbrand[0], arr[1] = carbrand[1], arr[2] = str,arr[3] = carbrand[2],
+        arr[4] = carbrand[3],
+        arr[5] = carbrand[4]};
     }
 
 }

@@ -21,8 +21,8 @@ public class Exercise1 {
         System.out.println(concatElements("Java", 1));
 
 
-        String [] carbrand;
-        System.out.println(modifyArr(carbrand, "Fiat"));
+       /* String [] carbrand;
+        System.out.println(modifyArr(carbrand, "Fiat"));*/
 
     }
 

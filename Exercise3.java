@@ -13,10 +13,21 @@ Esercizio #3
 public class Exercise3 {
     public static void main(String[] args) {
 
-        System.out.println(perimetroRettangolo(5.4,7.9));
+        System.out.println(perimetroRettangolo(6.4,7.9));
+        System.out.println(pariDispari(12));
     }
 
     public static double perimetroRettangolo (double side1, double side2) {
         return (side1*2)+(side2*2);
+    }
+
+    public static int pariDispari (int num1) {
+        if (num1 % 2 == 0) {
+            return 0;
+        } else {
+            return 1;
+        }
+
+
     }
 }

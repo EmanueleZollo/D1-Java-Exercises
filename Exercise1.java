@@ -9,6 +9,8 @@
 
         Scrivere una main che invochi in sequenza i tre metodi realizzati*/
 
+import java.util.Arrays;
+
 public class Exercise1 {
     public static void main(String[] args) {
 
@@ -21,8 +23,8 @@ public class Exercise1 {
         System.out.println(concatElements("Java", 1));
 
 
-       /* String [] carbrand;
-        System.out.println(modifyArr(carbrand, "Fiat"));*/
+        String [] carbrand = {"Mercedes", "Wolkswagen", "Opel", "Renault", "Ford"};
+        System.out.println(Arrays.toString(modifyArr(carbrand, "Fiat")));
 
     }
 
@@ -37,10 +39,15 @@ public class Exercise1 {
 
 
     public static String[] modifyArr(String[] arr, String str ) {
-        String [] carbrand = {"Mercedes", "Wolkswagen", "Opel", "Renault", "Ford"};
-        return new String[] {arr[0] = carbrand[0], arr[1] = carbrand[1], arr[2] = str,arr[3] = carbrand[2],
-        arr[4] = carbrand[3],
-        arr[5] = carbrand[4]};
+        String[] newCarBrandArr;
+        newCarBrandArr = new String[6];
+        newCarBrandArr[0] = arr[0];
+        newCarBrandArr[1] = arr[1];
+        newCarBrandArr[2] = str;
+        newCarBrandArr[3] = arr[2];
+        newCarBrandArr[4] = arr[3];
+        newCarBrandArr[5] = arr[4];
+        return newCarBrandArr;
     }
 
 }

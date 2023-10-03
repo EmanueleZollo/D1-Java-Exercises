@@ -14,6 +14,7 @@ public class Exercise2 {
         String str3 = input.nextLine();
         System.out.println( str1 + str2 + str3);
         System.out.println( str3 + str2 + str1);
+        input.close();
     }
 
 
